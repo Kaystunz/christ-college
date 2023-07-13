@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		<meta rel="viewport" content="device=device-width,initial-scale=1"/>
+		<link rel="stylesheet" href="./css/christ.css"/>
+		<link rel="stylesheet" href="font/css/all.css"/>
+		<title>Christ-college</title>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Christ-college<i class="fa-solid fa-graduation-cap"></i></h1>
+			<div class="first-nav">
+				<div class="drop1">
+					<span>About</span>
+					<div class="about">
+						<a href="#">alunmi</a>
+						<a href="#">school activities</a>
+						<a href="#">History</a>
+					</div>
+				</div>
+					<div class="drop2">
+						<span>Academics</span>
+						<div class="acad">
+							<a href="#">High School</a>
+							<a href="#">Elementary School</a>
+							<a href="#">Pre-School</a>
+						</div>
+					</div>	
+						<div class="drop3">
+							<span>Pay-Fees</span>
+							<div class="pay">
+								<a href="#">School-Fee</a>
+								<a href="#">School-Dormitary</a>
+								<a href="#">School Excursion</a>
+							</div>
+						</div>	
+				</div>
+				<div id="mySidebar" class="sidebar">
+					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					  <a href="#">About</a>
+					  <a href="#">Academics</a>
+					  <a href="#">Pay-Fees</a>
+				</div>
+				<div id="main">
+					<button class="openbtn" onclick="openNav()">☰</button>  
+				</div>
+				<div class="i">
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-twitter"></i>
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+		</div>
+		
+		<div class="our-school">
+		<div class="slideshow-container">
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+				<img src="./img/images.jpeg" style="width:100%">
+				<div class="text" style="font-size:20px;">School building</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<img src="./img/images1.jpeg" style="width:100%">
+				<div class="text" style="font-size:20px;">Classroom</div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<img src="./img/library.jpeg" style="width:100%">
+				<div class="text" style="font-size:20px;">Library</div>
+			  </div>
+
+			</div>
+			<br>
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+		<h1 style="border-left:5px solid red; padding-left:5px;">About US</h1>
+		<p>We are a child-focused ream of educators who seek to motivate every student and drive each of them to want to succeed.</p>
+	</div>
+		<div class="adback">
+			<div class="ad">
+			<h2>Christ-college</h2>
+			<p>A secondary school that helps every child reach their maximum potential.</p>
+			<h2>JOIN OUR ONLINE TOUR</h2>
+			<div class="tutor">
+				<h2>Day / Boarding School:</h2>
+				<p>Four in one room(en-route) hostel accomodation</p>
+				<h2>Inspired Educators</h2>
+				<p>Providing individualized learning to strengthen each student's abilities</p>
+				<h2>Computer Based:</h2>
+				<p>A structured environment where technology is used for learning purpose</p>
+			</div>
+			</div>
+		</div>
+		<div class="offer">
+			<div class="apply">
+				<h2>Apply</h2>
+			<p>apply to our Extinguished institution easily through the button below.</p>
+			<button>Apply</button>
+			</div>
+			<div class="know">
+				<h2>Facilities</h2>
+			<p>We offer a highly equipped facilities for easy learning and understanding.</p>
+			<button>Apply</button>
+			</div>
+			<div class="feed">
+				<h2>Academics</h2>
+			<p>At christ-college, we make use of british curriculum in teaching our students.</p>
+			<button>read more</button>
+			</div>
+		</div>
+		<script>
+		
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+		</script>
+		<script>
+	function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+	</body>
+</html>

@@ -1,0 +1,498 @@
+body{
+	width:100%;
+	height:100%;
+	max-width:100%;
+	max-height:100%;	
+}
+.header{
+	width:100%;
+	max-width:100%;
+	display:flex;
+	width:100%;
+	box-sizing: border-box;
+	background:rgb(243, 243, 80);
+	margin-top: -7px;
+	height:80px;
+}
+.header h1{
+	text-shadow: 2px 2px rgb(74, 74, 236) ;
+	height:50px;
+	margin-top:7px;
+	display:inline;
+	border-radius:5px;
+	color:rgb(167, 164, 164);
+}
+.header h1 span{
+	height:10px;
+	background-color:red;
+	width:1px;
+}
+.drop1{
+	display:inline-block;
+	margin-right:10px;
+	border-left:1px solid red; 
+	padding-left:4px;
+	position:relative;
+	height:20px;
+	max-height:30px;
+}
+.drop2{
+	display:inline-block;
+	margin-right:10px;
+	border-left:1px solid red; 
+	padding-left:4px;
+	position:relative;
+	height:20px;
+	max-height:30px;
+}
+.drop3{
+	display:inline-block;
+	margin-right:10px;
+	border-left:1px solid red; 
+	padding-left:4px;
+	position:relative;
+	height:20px;
+	max-height:30px;
+}
+.drop3:hover, .drop2:hover, .drop1:hover{
+	background:rgba(200, 150, 200, 0.6);
+}
+.about{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+.acad{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.pay{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.about a{
+	display:block;
+	text-decoration:none;
+	color:black;
+	 padding: 12px 16px;
+}
+.acad a{
+	display:block;
+	text-decoration:none;
+	color:black;
+	padding:12px 16px;
+}
+.pay a{
+	display:block;
+	text-decoration:none;
+	color:black;
+	padding:12px 16px;
+}
+.pay a:hover{
+	background:rgba(200, 150, 200, 0.6);
+}
+.acad a:hover{
+	background:rgba(200, 150, 200, 0.6);
+}
+.about a:hover{
+	background:rgba(200, 150, 200, 0.6);
+}
+.drop1:hover .about{
+	display:block;
+}
+.drop2:hover .acad{
+	display:block;
+}
+.drop3:hover .pay{
+	display:block;
+}
+@media screen and (max-width:900px){
+	.drop1{
+		display:none;
+	}
+	.drop2{
+		display:none;
+	}
+	.drop3{
+		display:none;
+	}
+}
+.drop span{
+	font-size:15px;
+}
+.i{
+	margin-top:25px;
+	margin-right:15px;
+	
+}
+.i i:hover{
+	color:rgba(200, 150, 200, 0.6);
+}
+@media screen and (max-width:900px){
+	.i{
+		display:none;
+	}
+}
+.first-nav{
+	margin:0% auto;
+	margin-top:20px;
+	padding-right: 20px;
+}
+
+.first-nav span{
+	cursor: pointer;
+}
+
+.reg{
+	float:right;
+	margin-top:-60px;
+	margin-right:10px;
+	height:100px;
+}
+	.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left:0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background:rgba(200, 150, 200, 0.6);
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+	display:none;
+ float:right;
+ overflow:hidden;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+@media screen and (max-width:900px){
+	.openbtn{
+		display:inline-block;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+	@media screen and (max-width:900px){
+.openbtn{
+
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float:right;
+}
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+}
+.reg div{
+	display:inline;
+	margin-right:2px;
+	border:none;
+	height:60px;
+}
+.reg div a{
+	text-decoration: none;
+}
+.our-school{
+	box-sizing:border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev{
+	left:0;
+	border-radius:3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.our-school{
+	text-align:center;
+}
+.our-school h1{
+	display:inline-block;
+}
+.our-school p{
+	font-size: 20px;
+	margin-top: -8px;
+}
+.adback{
+	background-image: url(../img/adback.jpeg);
+	text-align:center;
+	background-repeat: no-repeat;
+	background-size: 100vh 100vh;
+	background-size:cover;
+}
+
+.adback h2{
+	display: inline-block;
+	border-bottom: 1px solid red;
+}
+.adback p{
+	font-size:20px;
+	color:white;
+}
+.ad{
+	width:500px;
+	background-color: rgba(109, 108, 108, 0.5);
+	margin:auto;
+}
+.tutor{
+	width:450px;
+	border:1px solid white;
+	margin: auto;
+}
+.offer{
+	margin-top:80px;
+	width:100%;
+	max-width:100%;
+	display:flex;
+	flex-direction:row;
+}
+	@media screen and (max-width:900px) {
+  .offer{
+    display:block;
+  }
+  .feed, .apply, .know{
+	  margin-top:10px;
+  }
+  .feed button{
+	  margin-bottom:10px;
+  }
+  .apply button{
+	  margin-bottom:10px;
+  }
+	}
+.offer .apply,.know,.feed{
+	border:1px solid black;
+	margin-right:7px;
+	width:100%;
+	max-width:100%;
+	border-radius:5px;
+	box-sizing:border-box;
+	padding-left:5px;
+	box-shadow: 3px 3px 2px rgb(197, 78, 78);
+}
+.apply:hover ,.know:hover,.feed:hover{
+	opacity:0.8;
+}
+.offer .apply,.know,.feed h2{
+	text-align:center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.feed{
+	text-align:center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background:url(../img/library.jpeg);
+	height:400px;
+	background-size:cover;
+	background-repeat:repeat-y;
+	box-sizing:border-box;
+	padding-top:130px
+	
+}
+.apply{
+	background:url(../img/admission.jpeg);
+	height:400px;
+	background-size:cover;
+	background-repeat:repeat-y;
+	box-sizing:border-box;
+	padding-top:130px;
+}
+.know{
+	background:url(../img/academy.jpeg);
+	height:400px;
+	background-size:cover;
+	background-repeat:repeat-y;
+	box-sizing:border-box;
+	padding-top:130px;
+}
+.feed h2{
+	margin-top:-8px;
+	text-decoration: underline;
+	font-size:30px;
+}
+.feed p{
+	font-size:20px;
+}
+.apply h2{
+	margin-top:-8px;
+	text-decoration:underline;
+	font-size:30px;
+}
+.apply p{
+	color:black;
+	font-size:20px;
+}
+.know h2{
+	margin-top:-8px;
+	text-decoration:underline;
+	font-size:30px;
+}
+.know p{
+	font-size:20px;
+}
+.know button{
+	margin-bottom:10px;
+}
+.apply:hover button,.know:hover button,.feed:hover button{
+	background:linear-gradient(purple,pink,gold);
+}
+.know button, .feed button, .apply button{
+	width:100px;
+	height:30px;
+}
+.offer button{
+	border-radius:10px;;
+}
